@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<header>
+	<header id="my-header">
 		<div class="container">
 			<div class="branding" >
 				<div class="text-left">
@@ -38,16 +38,66 @@
 			
 		</div>
 	</header>
-	</section>
-	<section id="signin">
+	
+
+	
+	<section id="statistcis">
 		<div class="container">
-			<h3>Add a Ride Offer</h3>
+		
 			<div>
 				<a href="addRide.html"><button class="button-green">Create Ride</button> </a>
 				<a href="viewAllRideRequests.html"><button class="button-green primary">View All Rides Requests</button> </a>
 			</div>
+	</div>
+		<div class="container">
+			<div class="card-block">
+                <div class="statistics-header">
+				   <h3>Rides Statistics</h3>
+			    </div>
+
+			    <div class="stat-container">
+			        <h4><span>Date Range</span></h4>
+			        <p>Last Week</p>
+			         <h4><span>Filter Date</span></h4>
+			        <p>From</p>
+			        <p>18th June 2018</p>
+			        <p>To</p>
+			        <p>26 June 2018</p>
+			    
+			     </div>
+			     <div class="stat-container">
+			        <p>Total Rides : <span>20</span></p>
+			        <p>Requested Rides : <span>15</span></p>
+			         <p>Rejected rides : <span>3</span></p>
+			         <p>Pending rides : <span>5</span></p>
+			         <p>Accepted rides : <span>7</span></p>
+			         <br><br><br>
+			    
+			     </div>
+
+			    <div class="stat-container" style="float: right;">
+                    <div class="stat-profile" style="float: right;">
+				       <h3>Profile</h3>
+			        </div>
+			    	<div class="card-prof">
+			         <img src="./images/avatar-1606916_960_720.png" alt="Avatar" style="width:100%">
+			          <p>DAVID MWANGI</p>
+			          <p>davidmwangi@gmail.com</p>
+			          <a href="Signin.html"><p><img src="./images/Go-back-icon.png" class="custom-icon">logout</p></a>
+                     </div>
+			    </div>
+		   </div>
+		</div>
+	</section>
+	<section id="ridesTable">
+		<div class="container">
 			
-			<h3>Available rides</h3>
+			
+			<div class="table-caption">
+				<h3>Available rides</h3>
+			</div>
+			<!--Make Table responsive-->
+			<div style="overflow-x:auto;">
 			<!--Table to display all Rides Created by the Driver-->
 			<table id="rides">
 			 <tr>
@@ -58,7 +108,9 @@
 			   <th>To</th>
 			   <th>Departure Date</th>
 			   <th>Departute Time</th>
-			   <th>Manipulate</th>
+			   <th>Requests</th>
+			   <th>Edit</th>
+			   <th>Delete</th>
 			</tr>
 			  <tr>
 			    <td>1</td>
@@ -69,10 +121,15 @@
 			   <td>06/23/2018</td>
 			   <td>12:33 PM</td>
 			   <td>
-			   	 <a href="editRide.html"><button class="button-blue">Edit</button></a>
 			   	<a  data-notifications="5" href="rideRequests.html"><button class="button-cyan">View Requests</button></a>
-			   	<a href="#"><button class="button-red">Delete</button></a>
 			   </td>
+			   <td>
+			    <a href="editRide.html"><img src="./images/edit.png"></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
 			  </tr>
 			  <tr>
 			    <td>2</td>
@@ -83,10 +140,17 @@
 			   <td>06/24/2018</td>
 			   <td>01:33 PM</td>
 			   <td>
-			    <a href=""><button class="button-blue">Edit</button></a>
 			   	<a href=""><button class="button-cyan">View Requests</button></a>
-			   	<a href=""><button class="button-red">Delete</button></a>
 			   </td>
+			   <td>
+			    <a href=""><img src="./images/edit.png"></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			  
+			   
+			   
 			  </tr>
 			  <tr>
 			    <td>3</td>
@@ -97,10 +161,15 @@
 			   <td>06/25/2018</td>
 			   <td>12:50 PM</td>
 			   <td>
-			   	 <a href=""><button class="button-blue">Edit</button></a>
 			   	<a href=""><button class="button-cyan">View Requests</button></a>
-			   	<a href=""><button class="button-red">Delete</button></a>
 			   </td>
+			   <td>
+			    <a href=""><img src="./images/edit.png"></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			  
 			  </tr>
 			  <tr>
 			    <td>4</td>
@@ -111,10 +180,15 @@
 			   <td>06/27/2018</td>
 			   <td>09:30 AM</td>
 			   <td>
-                 <a href=""><button class="button-blue">Edit</button></a>
 			   	<a href=""><button class="button-cyan">View Requests</button></a>
-			   	<a href=""><button class="button-red">Delete</button></a>
 			   </td>
+			   <td>
+			    <a href=""><img src="./images/edit.png"></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
 			  </tr>
 			  <tr>
 			    <td>5</td>
@@ -125,9 +199,15 @@
 			   <td>06/28/2018</td>
 			   <td>09:30 AM</td>
 			   <td>
-			    <a href=""><button class="button-blue">Edit</button></a>
 			   	<a href=""><button class="button-cyan">View Requests</button></a>
-			   	<a href=""><button class="button-red">Delete</button></a></td>
+			   </td>
+			   <td>
+			    <a href=""><img src="./images/edit.png"></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
 			  </tr>
 			  <tr>
 			    <td>6</td>
@@ -137,10 +217,16 @@
 			   <td>Nairobi</td>
 			   <td>07/23/2018</td>
 			   <td>10:30 AM</td>
-			   <td> 
-			   	<a href=""><button class="button-blue">Edit</button></a>
+			   <td>
 			   	<a href=""><button class="button-cyan">View Requests</button></a>
-			   	<a href=""><button class="button-red">Delete</button></a></td>
+			   </td>
+			   <td>
+			    <a href=""><img src="./images/edit.png"></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			  
 			  </tr>
 			  <tr>
 			    <td>7</td>
@@ -150,10 +236,16 @@
 			   <td>Kisii</td>
 			   <td>07/03/2018</td>
 			   <td>11:00 AM</td>
-			   <td> 
-			   	<a href=""><button class="button-blue">Edit</button></a>
+			   <td>
 			   	<a href=""><button class="button-cyan">View Requests</button></a>
-			   	<a href=""><button class="button-red">Delete</button></a></td>
+			   </td>
+			   <td>
+			    <a href=""><img src="./images/edit.png"></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
 			  </tr>
 			  <tr>
 			    <td>8</td>
@@ -163,10 +255,16 @@
 			   <td>Momabasa</td>
 			   <td>07/05/2018</td>
 			   <td>08:30 AM</td>
-			   <td> 
-			   	<a href=""><button class="button-blue">Edit</button></a>
+			  <td>
 			   	<a href=""><button class="button-cyan">View Requests</button></a>
-			   	<a href=""><button class="button-red">Delete</button></a></td>
+			   </td>
+			   <td>
+			    <a href=""><img src="./images/edit.png"></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
 			  </tr>
 			  <tr>
 			  	<td>9</td>
@@ -177,10 +275,15 @@
 			   <td>07/10/2018</td>
 			   <td>08:30 AM</td>
 			   <td>
-			   	 <a href=""><button class="button-blue">Edit</button></a>
 			   	<a href=""><button class="button-cyan">View Requests</button></a>
-			   	<a href=""><button class="button-red">Delete</button></a>
 			   </td>
+			   <td>
+			    <a href=""><img src="./images/edit.png"></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
 			  </tr>
 			  <tr>
 			    <td>10</td>
@@ -191,13 +294,18 @@
 			   <td>07/15/2018</td>
 			   <td>09:30 AM</td>
 			   <td>
-			   	 <a href=""><button class="button-blue">Edit</button></a>
 			   	<a href=""><button class="button-cyan">View Requests</button></a>
-			   	<a href=""><button class="button-red">Delete</button></a>
 			   </td>
+			   <td>
+			    <a href=""><img src="./images/edit.png"></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
 			  </tr>
 			</table>
-			
+		  </div>
 		</div>
 	</section>
 	
@@ -206,6 +314,19 @@
 	 	<p>David Mwangi, Copyright &copy; 2018</p>
 	 </footer>
 
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("my-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 </script>
 </body>
 </html>

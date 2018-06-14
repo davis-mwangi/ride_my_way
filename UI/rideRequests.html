@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<header>
+	<header id="my-header">
 		<div class="container">
 			<div class="branding" >
 				<div class="text-left">
@@ -39,10 +39,16 @@
 		</div>
 	</header>
 	</section>
-	<section id="signin">
+	<section id="requests-for-ride">
 		<div class="container">
+			<div class="ride-detail">
+				<p>From :<span>Nakuru</span></p>
+				<p>To :<span>Nairobi</span></p>
+				<p>Departure Date : <span>06/23/2018</span></p>
+				<p>Departure Time :<span>12:33 PM</span></p>
+				<a href="driverPage.html"><button class="button-green">Back To All Rides</button> </a>
+			</div>
 			
-			<a href="driverPage.html"><button class="button-green">Back To All Rides</button> </a>
 			<h3>Ride Requests</h3>
 			<table id="rides">
 			 <tr>
@@ -119,6 +125,19 @@
 	 	<p>David Mwangi, Copyright &copy; 2018</p>
 	 </footer>
 
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("my-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 </script>
 </body>
 </html>

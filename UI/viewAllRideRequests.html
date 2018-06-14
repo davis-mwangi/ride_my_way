@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<header>
+	<header id="my-header">
 		<div class="container">
 			<div class="branding" >
 				<div class="text-left">
@@ -42,7 +42,7 @@
 	<section id="rider-requests">
 		<div class="container">
 			<div class="pos-left">
-				<a href="driverPage.html"><button class="button-green"><img src="./images/Go-back-icon.png" class="custom-icon"> Back To All Rides</button> </a>
+				<a href="driverPage.html"><button class="button-green"><img src="./images/Go-back-icon.png" class="custom-icon"> Back To Driver Page</button> </a>
 			</div>
 			<!--Row 1-->
             <div class="my-row">
@@ -181,6 +181,21 @@
 	 <footer>
 	 	<p>David Mwangi, Copyright &copy; 2018</p>
 	 </footer>
+<!--Script to Stick header on Scroll-->
+	 </footer>
+	 <script>
+window.onscroll = function() {myFunction()};
 
+var header = document.getElementById("my-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>

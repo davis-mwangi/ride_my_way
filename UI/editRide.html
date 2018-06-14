@@ -10,7 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<header>
+	
+
+	<header id="my-header">
 		<div class="container">
 			<div class="branding" >
 				<div class="text-left">
@@ -44,11 +46,16 @@
 			<form id="form" action="" method="post">
                 <h2 class="">Edit Ride</h2>
                 
-                <div>
-				    <label for='carType'>Car Type <span class='required'>(required)</span></label>
-				    <input type='text' name='carType' placeholder='Car Type' required />
-			    </div>
-
+                <div class="dropdown">	                		
+			    <select name="one" class="dropdown-select">
+			      <option value="">Select Your ride Choice Type</option>
+			      <option value="1">Car</option>
+			      <option value="2">Bike</option>
+			    </select>
+			  	</div>
+                
+                
+                
 			    <div>
 				    <label for='maxPass'>Max Passangers<span class='required'>(required)</span></label>
 				    <input type='number' name='maxPass' placeholder='Car Maximun Passangers' />
@@ -81,7 +88,21 @@
 	
 	 <footer>
 	 	<p>David Mwangi, Copyright &copy; 2018</p>
+	 	<!--Script to Stick header on Scroll-->
 	 </footer>
+	 <script>
+window.onscroll = function() {myFunction()};
 
+var header = document.getElementById("my-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>
