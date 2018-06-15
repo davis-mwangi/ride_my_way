@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width">
+	 <meta name="description" content="Affordable web Design">
+	 <meta name="keywords" content="Web design , Affordable web design">
+	 <meta name="author" content="David Mwangi">
+	<title>Add Ride</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<header id ="my-header">
+		<div class="container">
+			<div class="branding" >
+				<div class="text-left">
+					<a href="index.html"><img src="./images/logo.png" class="logo"></a>
+				</div>
+				
+				<nav class="left-nav">
+					<ul class="myMenu">
+						  <li ><a href="index.html">Home</a></li>
+						  <li ><a href="riderPage.html">Ride</a></li>
+					     <li class="current"><a href="driverPage.html">Drive</a></li>
+					</ul>
+			</nav>
+			<nav class="right-nav">
+				<ul class="myMenu">
+					<li><a href="Signin.html">Sign In</a></li>
+					<li><a href="SignUp.html">Sign Up</a></li>
+			   </ul>
+			</nav>
+			
+			</div>	
+			
+			
+			
+		</div>
+	</header>
+	
+	</section>
+	<section id="signup">
+		<div class="container">
+			<form id="form" action="" method="post">
+                <h2 class="">Add Ride</h2>              
+               
+				<div class="dropdown">				
+			    <select name="one" class="dropdown-select">
+			      <option value="">What would you like to Drive?</option>
+			      <option value="1">Car</option>
+			      <option value="2">Bike</option>
+			    </select>
+			  	</div>
+			    
+
+			    <div>
+				    <label for='maxPass'>Max Passangers<span class='required'>(required)</span></label>
+				    <input type='number' name='maxPass' placeholder='Car Maximun Passangers' />
+			    </div>
+                <div>
+				    <label for='from'>From<span class='required'>(required)</span></label>
+				    <input type='text' name='from' placeholder='Departure Location' required />
+			    </div>
+
+			    <div>
+				    <label for='finalDestination'>To<span class='required'>(required)</span></label>
+				    <input type="text" name="finalDestination" placeholder="Final Destination" required>
+			    </div>
+			    <div>
+				    <label for='depDate'>Departure Date<span class='required'>(required)</span></label>
+				    <input type="date" name="depDate" placeholder="Departure Date" required>
+			    </div>
+			    <div>
+				    <label for='departTime'>Departure Time<span class='required'>(required)</span></label>
+				    <input type="time" name="departTime" placeholder="Departure Time" required>
+			    </div>
+
+				<div>
+				    <button type='submit' class="button_block">ADD RIDE</button>
+				</div>
+            </form>
+		</div>
+	</section>
+	
+	
+	 <footer>
+	 	<p>David Mwangi, Copyright &copy; 2018</p>
+	 </footer>
+<!--Script to Stick header on Scroll-->
+	 </footer>
+	 <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("my-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width">
+	 <meta name="description" content="Affordable web Design">
+	 <meta name="keywords" content="Web design , Affordable web design">
+	 <meta name="author" content="David Mwangi">
+	<title>All Ride Requests</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<header id="my-header">
+		<div class="container">
+			<div class="branding" >
+				<div class="text-left">
+					<a href="index.html"><img src="./images/logo.png" class="logo"></a>
+				</div>
+				
+				<nav class="left-nav">
+				<ul >
+					<li><a href="riderPage.html">Ride</a></li>
+					<li><a href="driverPage.html">Drive</a></li>
+					
+				</ul>
+				
+			</nav>
+			<nav class="right-nav">
+				<ul>
+				<li><a href="Signin.html">Sign In</a></li>
+				<li><a href="SignUp.html">Sign Up</a></li>
+			</ul>
+			</nav>
+			
+			</div>	
+			
+			
+			
+		</div>
+	</header>
+	</section>
+	<section id="requests-for-ride">
+		<div class="container">
+			<div class="ride-detail">
+				<p>From :<span>Nakuru</span></p>
+				<p>To :<span>Nairobi</span></p>
+				<p>Departure Date : <span>06/23/2018</span></p>
+				<p>Departure Time :<span>12:33 PM</span></p>
+				<a href="driverPage.html"><button class="button-green">Back To All Rides</button> </a>
+			</div>
+			
+			<h3>Ride Requests</h3>
+			<table id="rides">
+			 <tr>
+			   <th>Id</th>
+			   <th>Name</th>
+			   <th>Phone Number</th>
+			   <th>Email</th>
+			   <th>Status</th>
+			   <th>Response</th>
+			</tr>
+			  <tr>
+			    <td>1</td>
+			    <td>David Mwangi</td>
+			   <td>0709095959</td>
+			   <td>david@gmailcom</td>
+			   <td>Pedding</td>
+			   <td>
+			   	<a href=""><button class="button-blue">Accept</button></a>
+			   	<a href="#"><button class="button-red">Reject</button></a>
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>2</td>
+			    <td>David Mwangi</td>
+			   <td>0709095959</td>
+			   <td>david@gmailcom</td>
+			   <td>Pedding</td>
+			   <td>
+			   	<a href=""><button class="button-blue">Accept</button></a>
+			   	<a href="#"><button class="button-red">Reject</button></a>
+			   </td>
+			  </tr>
+			  <tr>
+			   <td>3</td>
+			    <td>David Mwangi</td>
+			   <td>0709095959</td>
+			   <td>david@gmailcom</td>
+			   <td>Pedding</td>
+			   <td>
+			   	<a href=""><button class="button-blue">Accept</button></a>
+			   	<a href="#"><button class="button-red">Reject</button></a>
+			   </td>
+			  </tr>
+			  <tr>
+			    <td>4</td>
+			    <td>David Mwangi</td>
+			   <td>0709095959</td>
+			   <td>david@gmailcom</td>
+			   <td>Pedding</td>
+			   <td>
+			   	<a href=""><button class="button-blue">Accept</button></a>
+			   	<a href="#"><button class="button-red">Reject</button></a>
+			   </td>
+			  </tr>
+			  <tr>
+			    <td>5</td>
+			    <td>David Mwangi</td>
+			   <td>0709095959</td>
+			   <td>david@gmailcom</td>
+			   <td>Pedding</td>
+			   <td>
+			   	<a href=""><button class="button-blue">Accept</button></a>
+			   	<a href="#"><button class="button-red">Reject</button></a>
+			   </td>
+			  </tr>
+			  
+			</table>
+			
+		</div>
+	</section>
+	
+	
+	 <footer>
+	 	<p>David Mwangi, Copyright &copy; 2018</p>
+	 </footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("my-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

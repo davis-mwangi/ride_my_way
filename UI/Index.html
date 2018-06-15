@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width">
+	 <meta name="description" content="Affordable web Design">
+	 <meta name="keywords" content="Web design , Affordable web design">
+	 <meta name="author" content="David Mwangi">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<header id ="my-header">
+		<div class="container">
+			<div class="branding" >
+				<div class="text-left">
+					<a href="index.html"><img src="./images/logo.png" class="logo"></a>
+				</div>
+				
+				<nav class="left-nav">
+					<ul class="myMenu">
+						  <li class="current"><a href="#">Home</a></li>
+						  <li><a href="riderPage.html">Ride</a></li>
+					     <li><a href="driverPage.html">Drive</a></li>
+					</ul>
+			</nav>
+			<nav class="right-nav">
+				<ul class="myMenu">
+					<li><a href="Signin.html">Sign In</a></li>
+					<li><a href="SignUp.html">Sign Up</a></li>
+			   </ul>
+			</nav>
+			
+			</div>	
+			
+			
+			
+		</div>
+	</header>
+	<section id="showcase">
+		<div class="container">
+		</div>		
+	</section>
+	
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<img src="./images/motor_bike.jpg">
+				<h3>Bike Ride</h3>
+				<p>When traffic Jams locks you in the city never get stressed up.Ride-My-Way gives an option to get to your preferred loction with ease.Sign in now to book a ride.</p>
+				<a href="Signin.html" class="next">Request Ride &raquo;</a>
+			</div>
+			<div class="box">
+				<img src="./images/h-cars-a.jpg">
+				<h3>Car Ride</h3>
+				<p>May be you are stuck, there is a meeting I'm to attend will I make it and its already few minutes to kick off,Ride-My-Rides comes into your rescue just login and book your ride Now.</p>
+				<a href="Signin.html" class="next">Request Ride&raquo;</a>
+			</div>
+			
+			
+		</div>
+		
+	</section>
+	 <footer>
+	 	<p>David Web Website, Copyright &copy; 2018</p>
+	 </footer>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("my-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

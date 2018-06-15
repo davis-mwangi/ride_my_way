@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width">
+	 <meta name="description" content="Affordable web Design">
+	 <meta name="keywords" content="Web design , Affordable web design">
+	 <meta name="author" content="David Mwangi">
+	<title>My Rides</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<header id ="my-header">
+		<div class="container">
+			<div class="branding" >
+				<div class="text-left">
+					<a href="index.html"><img src="./images/logo.png" class="logo"></a>
+				</div>
+				
+				<nav class="left-nav">
+					<ul class="myMenu">
+						  <li ><a href="index.html">Home</a></li>
+						  <li class="current"><a href="riderPage.html">Ride</a></li>
+					     <li ><a href="driverPage.html">Drive</a></li>
+					</ul>
+			</nav>
+			<nav class="right-nav">
+				<ul class="myMenu">
+					<li><a href="Signin.html">Sign In</a></li>
+					<li><a href="SignUp.html">Sign Up</a></li>
+			   </ul>
+			</nav>
+			
+			</div>	
+			
+			
+			
+		</div>
+	</header>
+	<section id="ridesTable">
+		<div class="container">
+			
+			
+			<div class="table-caption">
+				<h3>My Rides</h3>
+			</div>
+			<!--Make Table responsive-->
+			<div style="overflow-x:auto;">
+			<!--Table to display all Rides Created by the Driver-->
+			<table id="rides">
+			 <tr>
+			   <th>Id</th>
+			   <th>Type</th>
+			   <th>From</th>
+			   <th>To</th>
+			   <th>Departure Date</th>
+			   <th>Departute Time</th>
+			   <th>Status</th>
+			   <th>Cancel Request</th>
+			   <th>Remove From List</th>
+			</tr>
+			  <tr>
+			   <td>1</td>
+			   <td>Car</td>
+			   <td>Nakuru</td>
+			   <td>Nairobi</td>
+			   <td>06/23/2018</td>
+			   <td>12:33 PM</td>
+			   <td>PENDING</td>
+			   <td>
+			   	<a href="#"><button class="button-cyan">Cancel</button></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
+			  </tr>
+			  <tr>
+			    <td>2</td>
+			    <td>Bike</td>
+			   <td>Ryosambu</td>
+			   <td>Kencom</td>
+			   <td>06/24/2018</td>
+			   <td>01:33 PM</td>
+			   <td>ACCEPTED</td>
+			   <td>
+			   	<a href=""><button class="button-cyan">Cancel</button></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			  
+			   
+			   
+			  </tr>
+			  <tr>
+			    <td>3</td>
+			    <td>Car</td>
+			   <td>Nairobi</td>
+			   <td>Mombasa</td>
+			   <td>06/25/2018</td>
+			   <td>12:50 PM</td>
+			    <td>ACCEPTED</td>
+			   <td>
+			   	<a href="#"><button class="button-cyan">Cancel</button></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			  
+			  </tr>
+			  <tr>
+			    <td>4</td>
+			    <td>Car</td>
+			   <td>Nairobi</td>
+			   <td>Nakuru</td>
+			   <td>06/27/2018</td>
+			   <td>09:30 AM</td>
+			    <td>ACCEPTED</td>
+			   <td>
+			   	<a href="#"><button class="button-cyan">Cancel</button></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
+			  </tr>
+			  <tr>
+			    <td>5</td>
+			  <td>Car</td>
+			   <td>Nairobi</td>
+			   <td>Nakuru</td>
+			   <td>06/28/2018</td>
+			   <td>09:30 AM</td>
+			    <td>ACCEPTED</td>
+			   <td>
+			   		<a href="#"><button class="button-cyan">Cancel</button></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
+			  </tr>
+			  <tr>
+			    <td>6</td>
+			    <td>Car</td>
+			   <td>Mombasa</td>
+			   <td>Nairobi</td>
+			   <td>07/23/2018</td>
+			   <td>10:30 AM</td>
+			    <td>ACCEPTED</td>
+			   <td>
+			   	<a href="#"><button class="button-cyan">Cancel</button></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			  
+			  </tr>
+			  <tr>
+			    <td>7</td>
+			    <td>Car</td>
+			   <td>Nakuru</td>
+			   <td>Kisii</td>
+			   <td>07/03/2018</td>
+			   <td>11:00 AM</td>
+			    <td>ACCEPTED</td>
+			   <td>
+			   	<a href="#"><button class="button-cyan">Cancel</button></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
+			  </tr>
+			  <tr>
+			    <td>8</td>
+			    <td>Car</td>
+			   <td>Nairobi</td>
+			   <td>Momabasa</td>
+			   <td>07/05/2018</td>
+			   <td>08:30 AM</td>
+			    <td>ACCEPTED</td>
+			  <td>
+			   		<a href="#"><button class="button-cyan">Cancel</button></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
+			  </tr>
+			  <tr>
+			  	<td>9</td>
+			   <td>Car</td>
+			   <td>Nakuru</td>
+			   <td>Nairobi</td>
+			   <td>07/10/2018</td>
+			   <td>08:30 AM</td>
+			    <td>ACCEPTED</td>
+			   <td>
+			   		<a href="#"><button class="button-cyan">Cancel</button></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
+			  </tr>
+			  <tr>
+			    <td>10</td>
+			    <td>Car</td>
+			   <td>Kisii</td>
+			   <td>Nakuru</td>
+			   <td>07/15/2018</td>
+			   <td>09:30 AM</td>
+			    <td>REJECTED</td>
+			   <td>
+			   		<a href="#"><button class="button-cyan">Cancel</button></a>
+			   </td>
+			   <td>
+			   	<a href=""><img src="./images/delete_icon.png"></a>
+			   </td>
+			   
+			  </tr>
+			</table>
+		  </div>
+		   <footer>
+	 	<p>David Mwangi, Copyright &copy; 2018</p>
+	 </footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("my-header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
