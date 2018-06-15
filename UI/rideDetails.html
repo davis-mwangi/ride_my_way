@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<header>
+	<header id ="my-header">
 		<div class="container">
 			<div class="branding" >
 				<div class="text-left">
@@ -18,18 +18,17 @@
 				</div>
 				
 				<nav class="left-nav">
-				<ul >
-					<li><a href="riderPage.html">Ride</a></li>
-					<li><a href="driverPage.html">Drive</a></li>
-					
-				</ul>
-				
+					<ul class="myMenu">
+						  <li ><a href="index.html">Home</a></li>
+						  <li class="current"><a href="riderPage.html">Ride</a></li>
+					     <li><a href="driverPage.html">Drive</a></li>
+					</ul>
 			</nav>
 			<nav class="right-nav">
-				<ul>
-				<li><a href="Signin.html">Sign In</a></li>
-				<li><a href="SignUp.html">Sign Up</a></li>
-			</ul>
+				<ul class="myMenu">
+					<li><a href="Signin.html">Sign In</a></li>
+					<li><a href="SignUp.html">Sign Up</a></li>
+			   </ul>
 			</nav>
 			
 			</div>	
@@ -41,18 +40,22 @@
 	</section>
 	<section id="rideDetails">
 		<div class="container">
-			<div>				
-				<a href="riderPage.html"><button class="button-cyan">Back to Ride Offers List</button> </a>
+			<div class="card-block">
+				<div class="left-nav">
+					 <a href="riderPage.html"><button class="button-cyan">Back to Ride Offers List</button> </a>
+					 <p>Driver: <strong>James Mucheru</strong></p>
+					 <p>Max Passangers:<strong>5</strong></p>
+					 <p>From: <strong>Nakuru</strong></p>
+					 <p>To:<strong>Nairobi</strong></p>
+					 <p>Departure <strong>Date:06/23/2018</strong></p>
+					 <p>Departure Time:<strong> 12:33 PM</strong></p>
+					 <a  href="#"><button class="button-green primary">Request Ride</button></a>
+			    </div>
+				<div class="right-nav">
+					<img src="./images/-nissan-juke-yellow-4297-0.png" alt="sample47"/>
+				</div>
 			</div>
-			   <p>Id : <strong>1</strong></p>
-			   <p>Driver: <strong>James Mucheru</strong></p>
-			   <p>Max Passangers:<strong>5</strong></p>
-			   <p>From: <strong>Nakuru</strong></p>
-			   <p>To:<strong>Nairobi</strong></p>
-			   <p>Departure <strong>Date:06/23/2018</strong></p>
-			   <p>Departure Time:<strong> 12:33 PM</strong></p>
-			   	<a  href="rideRequests.html"><button class="button-green primary">Request Ride</button></a>
-			
+				
 		</div>
 	</section>
 	

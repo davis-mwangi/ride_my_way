@@ -1,15 +1,13 @@
+//Script to fizx the header on Scroll
+window.onscroll = function() {myFunction()};
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+var header = document.getElementById("my-header");
+var sticky = header.offsetTop;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
 }

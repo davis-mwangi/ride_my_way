@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<header id="my-header">
+	<header id ="my-header">
 		<div class="container">
 			<div class="branding" >
 				<div class="text-left">
@@ -18,18 +18,17 @@
 				</div>
 				
 				<nav class="left-nav">
-				<ul >
-					<li><a href="riderPage.html">Ride</a></li>
-					<li><a href="driverPage.html">Drive</a></li>
-					
-				</ul>
-				
+					<ul class="myMenu">
+						  <li ><a href="index.html">Home</a></li>
+						  <li ><a href="riderPage.html">Ride</a></li>
+					     <li class="current"><a href="driverPage.html">Drive</a></li>
+					</ul>
 			</nav>
 			<nav class="right-nav">
-				<ul>
-				<li><a href="Signin.html">Sign In</a></li>
-				<li><a href="SignUp.html">Sign Up</a></li>
-			</ul>
+				<ul class="myMenu">
+					<li><a href="Signin.html">Sign In</a></li>
+					<li><a href="SignUp.html">Sign Up</a></li>
+			   </ul>
 			</nav>
 			
 			</div>	
@@ -38,63 +37,49 @@
 			
 		</div>
 	</header>
-	
-
-	
-	<section id="statistcis">
-		<div class="container">
-		
-			<div>
-				<a href="addRide.html"><button class="button-green">Create Ride</button> </a>
-				<a href="viewAllRideRequests.html"><button class="button-green primary">View All Rides Requests</button> </a>
-			</div>
-	</div>
+	<section id="stats">
 		<div class="container">
 			<div class="card-block">
-                <div class="statistics-header">
-				   <h3>Rides Statistics</h3>
+				<div class="left-nav">
+					 <p>TOTAL RIDES CREATED</p>
+					 <h1 style="font-size: 72px;">10</h1>
+					 <div>
+					 	<div class="column left" >
+					    <p>ACCEPTED REQUESTS</p>
+					    <h2>7</h2>
+				    </div>
+				    <div class="column middle" >
+				    	<p>REJECTED REQUESTS</p>
+					    <h2>2</h2>
+					    
+				    </div>
+				    <div class="column right" >
+					    <p>PENDNG</p>
+					    <h2>1</h2>
+				    </div>
+					 </div>
+					
+					 <div class="access">
+					 	<a href="addRide.html"><button class="button-icon">Add Ride<img src="./images/add-128.png"></button></a>  
+                        <a href="viewAllRideRequests.html"><button class="button-icon blue-button">All Request<img src="./images/eye-3-128.png"></button></a>
+					 </div>
+					 
 			    </div>
-
-			    <div class="stat-container">
-			        <h4><span>Date Range</span></h4>
-			        <p>Last Week</p>
-			         <h4><span>Filter Date</span></h4>
-			        <p>From</p>
-			        <p>18th June 2018</p>
-			        <p>To</p>
-			        <p>26 June 2018</p>
-			    
-			     </div>
-			     <div class="stat-container">
-			        <p>Total Rides : <span>20</span></p>
-			        <p>Requested Rides : <span>15</span></p>
-			         <p>Rejected rides : <span>3</span></p>
-			         <p>Pending rides : <span>5</span></p>
-			         <p>Accepted rides : <span>7</span></p>
-			         <br><br><br>
-			    
-			     </div>
-
-			    <div class="stat-container" style="float: right;">
-                    <div class="stat-profile" style="float: right;">
-				       <h3>Profile</h3>
-			        </div>
-			    	<div class="card-prof">
-			         <img src="./images/avatar-1606916_960_720.png" alt="Avatar" style="width:100%">
-			          <p>DAVID MWANGI</p>
-			          <p>davidmwangi@gmail.com</p>
-			          <a href="Signin.html"><p><img src="./images/Go-back-icon.png" class="custom-icon">logout</p></a>
-                     </div>
-			    </div>
-		   </div>
+				<div class="right-nav">
+					<img class ="responsive" src="./images/-nissan-juke-yellow-4297-0.png" alt="sample47"/>
+				</div>
+				
+			</div>
 		</div>
+		
 	</section>
+
 	<section id="ridesTable">
 		<div class="container">
 			
 			
 			<div class="table-caption">
-				<h3>Available rides</h3>
+				<h3>Rides Created</h3>
 			</div>
 			<!--Make Table responsive-->
 			<div style="overflow-x:auto;">
@@ -308,6 +293,8 @@
 		  </div>
 		</div>
 	</section>
+	
+	
 	
 	
 	 <footer>
