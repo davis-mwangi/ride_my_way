@@ -5,43 +5,41 @@
 	<meta  name="viewport" content="width=device-width">
 	 <meta name="description" content="Affordable web Design">
 	 <meta name="keywords" content="Web design , Affordable web design">
-	 <meta name="author" content="David Mwangi">
-	<title>Sign In</title>
+	 <meta name="author" content="David Mwangs
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<header id ="my-header">
+	<header>
 		<div class="container">
 			<div class="branding" >
 				<div class="text-left">
-					<a href="index.html"><img src="./images/logo.png" class="logo"></a>
+					<h1><span class="highlight">Ride</span>My Way</h1>
 				</div>
 				
 				<nav class="left-nav">
-					<ul class="myMenu">
-						  <li ><a href="index.html">Home</a></li>
-						  <li ><a href="riderPage.html">Ride</a></li>
-					     <li ><a href="driverPage.html">Drive</a></li>
-					</ul>
+				<ul >
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Ride</a></li>
+					<li><a href="driverPage.html">Drive</a></li>
+					
+				</ul>
+				
 			</nav>
 			<nav class="right-nav">
-				<ul class="myMenu">
-					<li ><a href="Signin.html">Sign In</a></li>
-					<li class="current"><a href="SignUp.html">Sign Up</a></li>
-			   </ul>
+				<ul>
+				<li><a href="Signin.html">Sign In</a></li>
+				<li class="current"><a href="SignUp.html">Sign Up</a></li>
+			</ul>
 			</nav>
 			
-			</div>	
-			
-			
-			
+			</div>
 		</div>
 	</header>
 	</section>
 	<section id="signup">
 		<div class="container">
 			<form id="form" action="" method="post">
-				<h2 class="">Sign Up</h2>
+                <h2 class="">Sign Up</h2>
                 <div>
                 	<input type="radio" id="rider" name="radio-group" checked>
                     <label for="rider">Sign Up as Rider</label>
@@ -86,21 +84,6 @@
 	 <footer>
 	 	<p>David Mwangi, Copyright &copy; 2018</p>
 	 </footer>
-<!--Script to Stick header on Scroll-->
-	 </footer>
-	 <script>
-window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("my-header");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
 </body>
 </html>
